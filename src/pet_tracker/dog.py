@@ -20,7 +20,8 @@ class Dog(Pet):
         self.age = age
     
     def __str__(self):
-        representation = f"Name: {self.name}\n"
+        representation = "\nSpecies: Cat\n"
+        representation += f"\nName: {self.name}\n"
         representation += f"Breed: {self.breed}\n"
         representation += f"Age: {self.age}\n"
         representation += f"1 of {Dog.count} dogs.\n"
@@ -36,3 +37,4 @@ if __name__ == "__main__":
     # Print dog information
     print(fluffy)
     print(sandy)
+    name_of_dog = fluffy.get_name()
